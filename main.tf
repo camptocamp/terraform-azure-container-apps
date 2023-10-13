@@ -369,4 +369,10 @@ resource "azurerm_container_app" "container_app" {
       value               = local.container_app_secrets[each.key][secret.key].value
     }
   }
+  lifecycle {
+    ignore_changes = [
+      # Ignore changes to transport, e.g. tcp not currently supported to azurerm
+      ingress,
+    ]
+  }
 }
