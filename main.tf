@@ -372,8 +372,8 @@ resource "azurerm_container_app" "container_app" {
 
   lifecycle {
     ignore_changes = [
-      # Ignore changes to transport, e.g. tcp not currently supported to azurerm
-      ingress,
+      ingress,  # Ignore changes to transport, e.g. tcp not currently supported to azurerm
+      template, # This may be use case specific, github CI manages container.image field so template needs to be ignore
     ]
   }
 }
