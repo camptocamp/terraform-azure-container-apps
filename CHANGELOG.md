@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/camptocamp/terraform-azure-container-apps/compare/v0.2.0...v0.3.0) (2026-10-29)
+
+
+### Features
+
+* add linter and release please workflows ([9752795](https://github.com/camptocamp/terraform-azure-container-apps/commit/97527956b6c832ce2ae21c481e53050225b4de0a))
+* update azurerm provider to v4 ([574102a](https://github.com/camptocamp/terraform-azure-container-apps/commit/574102a00372c06aca1eb1206dbcdf8cb97624bf))
+
+
+### Bug Fixes
+
+* **ingress:** ignore transport change ([484bc83](https://github.com/camptocamp/terraform-azure-container-apps/commit/484bc83f46c6c8f9ee2fd54ddb305b43cc753f53))
+
 ## [Unreleased](https://github.com/camptocamp/terraform-azure-container-apps/tree/HEAD)
 
 **Merged pull requests:**
